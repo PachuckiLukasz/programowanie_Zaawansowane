@@ -3,15 +3,15 @@ enum Builder {
 
     @Override
     public String toString() {
-        switch (this) {
-            case FENDER: return "Fender";
-            case MARTIN: return "Martin";
-            case GIBSON: return "Gibson";
-            case COLLINGS: return "Collings";
-            case OLSON: return "Olson";
-            case RYAN: return "Ryan";
-            case PRS: return "PRS";
-            default: return "Any";
-        }
+        return switch (this) {
+            case FENDER -> "Fender";
+            case MARTIN -> "Martin";
+            case GIBSON -> "Gibson";
+            case COLLINGS -> "Collings";
+            case OLSON -> "Olson";
+            case RYAN -> "Ryan";
+            case PRS -> "PRS";
+            default -> "Any";
+        };
     }
 }

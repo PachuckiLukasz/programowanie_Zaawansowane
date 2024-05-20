@@ -3,17 +3,17 @@ enum Wood {
 
     @Override
     public String toString() {
-        switch (this) {
-            case INDIAN_ROSEWOOD: return "Indian Rosewood";
-            case BRAZILIAN_ROSEWOOD: return "Brazilian Rosewood";
-            case MAHOGANY: return "Mahogany";
-            case MAPLE: return "Maple";
-            case COCOBOLO: return "Cocobolo";
-            case CEDAR: return "Cedar";
-            case ADIRONDACK: return "Adirondack";
-            case ALDER: return "Alder";
-            case SITKA: return "Sitka";
-            default: return "Unspecified";
-        }
+        return switch (this) {
+            case INDIAN_ROSEWOOD -> "Indian Rosewood";
+            case BRAZILIAN_ROSEWOOD -> "Brazilian Rosewood";
+            case MAHOGANY -> "Mahogany";
+            case MAPLE -> "Maple";
+            case COCOBOLO -> "Cocobolo";
+            case CEDAR -> "Cedar";
+            case ADIRONDACK -> "Adirondack";
+            case ALDER -> "Alder";
+            case SITKA -> "Sitka";
+            default -> "Unspecified";
+        };
     }
 }

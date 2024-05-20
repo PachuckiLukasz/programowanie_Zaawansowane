@@ -3,10 +3,10 @@ enum Type {
 
     @Override
     public String toString() {
-        switch (this) {
-            case ACOUSTIC: return "Acoustic";
-            case ELECTRIC: return "Electric";
-            default: return "Unspecified";
-        }
+        return switch (this) {
+            case ACOUSTIC -> "Acoustic";
+            case ELECTRIC -> "Electric";
+            default -> "Unspecified";
+        };
     }
 }
